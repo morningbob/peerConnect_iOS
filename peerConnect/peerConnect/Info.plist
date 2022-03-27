@@ -2,6 +2,13 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSBonjourServices</key>
+	<array>
+		<string>_peerConnect._tcp</string>
+		<string>_peerConnect._udp</string>
+	</array>
+	<key>NSLocalNetworkUsageDescription</key>
+	<string>The app needs to access the local network such as bluetooth and wifi to discover nearby peer devices.</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

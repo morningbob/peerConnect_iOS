@@ -84,13 +84,45 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="k4T-JE-dhg">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PeerCellUnit" id="k4T-JE-dhg" customClass="PeerCell" customModule="peerConnect" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="35.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="k4T-JE-dhg" id="PbF-ZE-MFa">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="k4T-JE-dhg" id="PbF-ZE-MFa" customClass="PeerCell" customModule="peerConnect" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="35.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C5Y-Ht-Pc0">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="35.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Peer Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="00q-Bs-GjD">
+                                                            <rect key="frame" x="5" y="5" width="140" height="25.5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="25" id="heh-8F-x8y"/>
+                                                                <constraint firstAttribute="width" constant="140" id="rBK-2j-twz"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstItem="00q-Bs-GjD" firstAttribute="top" secondItem="C5Y-Ht-Pc0" secondAttribute="top" constant="5" id="RBj-u2-xW1"/>
+                                                        <constraint firstItem="00q-Bs-GjD" firstAttribute="leading" secondItem="C5Y-Ht-Pc0" secondAttribute="leading" constant="5" id="SqF-ws-2dy"/>
+                                                        <constraint firstAttribute="bottom" secondItem="00q-Bs-GjD" secondAttribute="bottom" constant="5" id="jNB-VQ-5X7"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="C5Y-Ht-Pc0" firstAttribute="top" secondItem="PbF-ZE-MFa" secondAttribute="top" id="MDI-NR-Z9T"/>
+                                                <constraint firstAttribute="bottom" secondItem="C5Y-Ht-Pc0" secondAttribute="bottom" id="Sec-BW-Ys7"/>
+                                                <constraint firstItem="C5Y-Ht-Pc0" firstAttribute="leading" secondItem="PbF-ZE-MFa" secondAttribute="leading" id="guY-wc-pwU"/>
+                                                <constraint firstAttribute="trailing" secondItem="C5Y-Ht-Pc0" secondAttribute="trailing" id="gvv-4C-bpl"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="peerName" destination="00q-Bs-GjD" id="M5Z-kK-Ywv"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -111,7 +143,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0aS-Ej-Q8N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1703" y="64"/>
+            <point key="canvasLocation" x="1702.8985507246377" y="63.616071428571423"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ODb-3E-22I">
