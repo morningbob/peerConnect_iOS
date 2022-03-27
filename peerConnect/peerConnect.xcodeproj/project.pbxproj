@@ -18,6 +18,7 @@
 		409FDE7B27EFE1CC00A09F49 /* peerConnectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409FDE7A27EFE1CC00A09F49 /* peerConnectUITests.swift */; };
 		409FDE7D27EFE1CC00A09F49 /* peerConnectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409FDE7C27EFE1CC00A09F49 /* peerConnectUITestsLaunchTests.swift */; };
 		409FDE8A27EFE75700A09F49 /* DiscoveredDevicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409FDE8927EFE75700A09F49 /* DiscoveredDevicesViewController.swift */; };
+		E7DAD6ED27F095C100BE91A5 /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DAD6EC27F095C100BE91A5 /* ConnectionManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		409FDE7A27EFE1CC00A09F49 /* peerConnectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = peerConnectUITests.swift; sourceTree = "<group>"; };
 		409FDE7C27EFE1CC00A09F49 /* peerConnectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = peerConnectUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		409FDE8927EFE75700A09F49 /* DiscoveredDevicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveredDevicesViewController.swift; sourceTree = "<group>"; };
+		E7DAD6EC27F095C100BE91A5 /* ConnectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		409FDE5527EFE1CA00A09F49 /* peerConnect */ = {
 			isa = PBXGroup;
 			children = (
+				E7DAD6EB27F0940000BE91A5 /* Connections */,
 				409FDE5627EFE1CA00A09F49 /* AppDelegate.swift */,
 				409FDE5827EFE1CA00A09F49 /* SceneDelegate.swift */,
 				409FDE5A27EFE1CA00A09F49 /* IntroViewController.swift */,
@@ -131,6 +134,14 @@
 				409FDE7C27EFE1CC00A09F49 /* peerConnectUITestsLaunchTests.swift */,
 			);
 			path = peerConnectUITests;
+			sourceTree = "<group>";
+		};
+		E7DAD6EB27F0940000BE91A5 /* Connections */ = {
+			isa = PBXGroup;
+			children = (
+				E7DAD6EC27F095C100BE91A5 /* ConnectionManager.swift */,
+			);
+			path = Connections;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				409FDE5B27EFE1CA00A09F49 /* IntroViewController.swift in Sources */,
+				E7DAD6ED27F095C100BE91A5 /* ConnectionManager.swift in Sources */,
 				409FDE5727EFE1CA00A09F49 /* AppDelegate.swift in Sources */,
 				409FDE6127EFE1CA00A09F49 /* peerConnect.xcdatamodeld in Sources */,
 				409FDE8A27EFE75700A09F49 /* DiscoveredDevicesViewController.swift in Sources */,

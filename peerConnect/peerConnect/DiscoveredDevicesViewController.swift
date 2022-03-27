@@ -7,15 +7,18 @@
 
 import UIKit
 
+
 class DiscoveredDevicesViewController: UIViewController {
     
     @IBOutlet weak var devicesTableView: UITableView!
     
+    private var connectionManager: ConnectionManager!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        connectionManager = ConnectionManager()
+        connectionManager.
     }
     
 
