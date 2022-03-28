@@ -52,7 +52,11 @@ class ConnectionManager : NSObject, ObservableObject {
         nearbyServiceBrowser.stopBrowsingForPeers()
     }
 
-    
+    func inviteConnect(peerID: MCPeerID) {
+        let context = "hello".data(using: .utf8)
+        
+        nearbyServiceBrowser.invitePeer(peerID, to: session, withContext: context, timeout: TimeInterval(120))
+    }
 }
 
 // to advertise user's device is available for connection

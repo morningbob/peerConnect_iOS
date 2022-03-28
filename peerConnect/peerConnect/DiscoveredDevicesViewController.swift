@@ -43,6 +43,7 @@ extension DiscoveredDevicesViewController: UITableViewDelegate, UITableViewDataS
         let peer = self.connectionManager.peers[(indexPath as IndexPath).row]
         
         cell.peerName?.text = peer.displayName
+        
         return cell
     }
     
